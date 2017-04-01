@@ -7,7 +7,7 @@
   <a href="https://github.com/godkillerdan/PhotoSwipe/blob/master/log.png" float="left">
     <img src="https://github.com/godkillerdan/PhotoSwipe/blob/master/log.png" alt="效果图">
   </a>
-  <a href="https://github.com/godkillerdan/PhotoSwipe/blob/master/log_big.png"  style="float:left;">
+  <a href="https://github.com/godkillerdan/PhotoSwipe/blob/master/log_big.png" float="left">
     <img src="https://github.com/godkillerdan/PhotoSwipe/blob/master/log_big.png" alt="效果图">
   </a>
 </p>
