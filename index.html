@@ -1,0 +1,249 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1, user-scalable=no"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/><!-- 删除苹果默认的工具栏和菜单栏 -->
+    <meta name="apple-mobile-web-app-status-bar-style" content="black"/><!-- 设置苹果工具栏颜色 -->
+    <meta name="format-detection" content="telephone=no, email=no"/><!--忽略页面中的数字识别为电话，忽略email识别 -->
+    <!-- 启用360浏览器的极速模式(webkit) -->
+    <meta name="renderer" content="webkit">
+    <!-- 避免IE使用兼容模式 -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <!-- 针对手持设备优化，主要是针对一些老的不识别viewport的浏览器，比如黑莓 -->
+    <meta name="HandheldFriendly" content="true">
+    <!-- 微软的老式浏览器 -->
+    <meta name="MobileOptimized" content="320">
+    <!-- uc强制竖屏 -->
+    <meta name="screen-orientation" content="portrait">
+    <!-- QQ强制竖屏 -->
+    <meta name="x5-orientation" content="portrait">
+    <!-- UC强制全屏 -->
+    <meta name="full-screen" content="yes">
+    <!-- QQ强制全屏 -->
+    <meta name="x5-fullscreen" content="true">
+    <!-- UC应用模式 -->
+    <meta name="browsermode" content="application">
+    <!-- QQ应用模式 -->
+    <meta name="x5-page-mode" content="app">
+    <!-- windows phone 点击无高光 -->
+    <meta name="msapplication-tap-highlight" content="no">
+    <!-- 适应移动端end -->
+    <link rel="stylesheet" type="text/css" href="css/reset.css"/>
+    <link rel="stylesheet" type="text/css" href="css/iconfont.css"/>
+    <!-- Core CSS file -->
+    <link rel="stylesheet" href="dist/photoswipe.css">
+    <link rel="stylesheet" href="dist/default-skin/default-skin.css">
+    <link rel="stylesheet" type="text/css" href="css/style.css"/>
+    <title>PhotoSwipe 朋友圈画廊</title>
+    <!--[if lt IE 9]>
+    <script type="text/javascript" src="js/html5shiv.min.js"></script>
+    <![endif]-->
+</head>
+<body>
+<div class="wrap">
+    <div class="header">
+        <div class="top_bg"></div>
+        <div class="member_info clearfix">
+            <!--<div class="avatar">
+                <img src="img/avatar.jpg" alt="个人头像">
+            </div>
+            <div class="nickname">
+                在路上的愚人
+            </div>-->
+        </div>
+    </div>
+    <div class="main">
+        <div class="feed">
+            <div class="feed_inner">
+                <ul class="feed_friend_list">
+                   <!-- <li class="f_single clearfix">
+                        <div class="f_aside">
+                            <img src="img/avatar_01.jpg" alt="朋友头像">
+                        </div>
+                        <div class="f_wrap">
+                            <h4>小黄人</h4>
+                            <div class="f_content">
+                                <div class="txt_area content_limit">
+                                    在宇宙中未知的地方有一个由12个人类殖民地组成的星际国家，人类为了方便制造了Cylons（机器人）为人类服务，但Cylons起来反抗人类，
+                                    双方在血战之后停火，Cylons离开了殖民地去建立自己的家园。40年的和平让
+                                    人类放松了警惕，Cylons通过人类内部的间谍瘫痪了人类的防御系统，摧毁了Battlestar舰队，用核武器将殖民地的城市化为灰烬。
+                                    Battlestar Galactica是唯一一艘幸存的航母，它在舰长Adama的指挥下带领几十艘各式各样的民船和近5万名幸存者逃离了殖民地的
+                                    行星系统，开始了寻找人类的第13个殖民地——地球——的旅程。
+                                </div>
+                                <div class="img_area clearfix">
+                                    <div class="my-gallery">
+                                        <figure>
+                                            <a href="img/attached-map01.jpg">
+                                                <img src="img/attached-map01.jpg" alt="附图">
+                                            </a>
+                                        </figure>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="f_comment">
+                                <p class="comment_top clearfix">
+                                    <span>1分钟前</span>
+                                    <span>评论</span>
+                                </p>
+                                <div class="comment_bot">
+                                    <div class="fav">
+                                        <i class="iconfont">&#xe616;</i>
+                                        <span>小豪</span><span>, 李小爱</span>
+                                    </div>
+                                    <div class="comment_something">
+                                        <span>小豪：</span>
+                                        什么
+                                    </div>
+                                    <div class="comment_something">
+                                        <span>淘淘：</span>
+                                        I use owl carousel to generate a slider, but at the same time I want to
+                                        use Photoswipe, but I can't. When I use the Owl carousel plugin, the slider's
+                                        inserted
+                                        into the code with a speciel markup, where each item (image) has a class of
+                                        .item and
+                                        the image is located 3 layers deep into that div.
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="f_single clearfix">
+                        <div class="f_aside">
+                            <img src="img/avatar_02.jpg" alt="朋友头像">
+                        </div>
+                        <div class="f_wrap">
+                            <h4>小清新</h4>
+                            <div class="f_content">
+                                <div class="txt_area content_limit">
+                                    买了一个更帅的电饭锅，可以手机远程操制的，开心
+                                </div>
+                                <div class="img_area clearfix">
+                                    <div class="my-gallery">
+                                        <figure>
+                                            <a href="img/attached_map05.jpg">
+                                                <img src="img/attached_map05.jpg" alt="附图">
+                                            </a>
+                                        </figure>
+                                        <figure>
+                                            <a href="img/attached_map03.jpg">
+                                                <img src="img/attached_map03.jpg" alt="附图">
+                                            </a>
+                                        </figure>
+                                    </div>
+                                </div>
+
+                            </div>
+                            <div class="f_comment">
+                                <p class="comment_top clearfix">
+                                    <span>23分钟前</span>
+                                    <span>评论</span>
+                                </p>
+                                <div class="comment_bot">
+                                    <div class="fav">
+                                        <i class="iconfont">&#xe616;</i>
+                                        <span>ANTHONY</span><span>, ☆Sanly☆</span>
+                                    </div>
+                                    <div class="comment_something">
+                                        <span>ANTHONY：</span>
+                                        这么先进，和我家的那台一样，打个电话，照样有饭吃，一键式，还带做菜功能，还能洗碗聊天晾衣服
+                                    </div>
+                                    <div class="comment_something">
+                                        <span>☆Sanly☆：</span>
+                                        远程？还有洗米放水功能？
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>
+                    <li class="f_single clearfix">
+                        <div class="f_aside">
+                            <img src="img/avatar_02.jpg" alt="朋友头像">
+                        </div>
+                        <div class="f_wrap">
+                            <h4>小可爱</h4>
+                            <div class="f_content">
+                                <div class="txt_area content_limit">
+                                    买了一个更帅的电饭锅，可以手机远程操制的，开心
+                                </div>
+
+
+                                <div class="img_area clearfix">
+                                    <div class="my-gallery">
+
+                                        <figure>
+                                            <a href="img/attached_map02.jpg">
+                                                <img src="img/attached_map02.jpg" alt="附图">
+                                            </a>
+                                        </figure>
+
+                                        <figure>
+                                            <a href="img/attached_map03.jpg">
+                                                <img src="img/attached_map03.jpg" alt="附图">
+                                            </a>
+                                        </figure>
+
+                                        <figure>
+                                            <a href="img/attached_map04.jpg">
+                                                <img src="img/attached_map04.jpg" alt="附图">
+                                            </a>
+                                        </figure>
+                                        <figure>
+                                            <a href="img/attached_map05.jpg">
+                                                <img src="img/attached_map05.jpg" alt="附图">
+                                            </a>
+                                        </figure>
+                                        <figure>
+                                            <a href="img/attached_map01.jpg">
+                                                <img src="img/attached_map01.jpg" alt="附图">
+                                            </a>
+                                        </figure>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="f_comment">
+                                <p class="comment_top clearfix">
+                                    <span>23分钟前</span>
+                                    <span>评论</span>
+                                </p>
+                                <div class="comment_bot">
+                                    <div class="fav">
+                                        <i class="iconfont">&#xe616;</i>
+                                        <span>ANTHONY</span><span>, ☆Sanly☆</span>
+                                    </div>
+                                    <div class="comment_something">
+                                        <span>ANTHONY：</span>
+                                        这么先进，和我家的那台一样，打个电话，照样有饭吃，一键式，还带做菜功能，还能洗碗聊天晾衣服
+                                    </div>
+                                    <div class="comment_something">
+                                        <span>☆Sanly☆：</span>
+                                        远程？还有洗米放水功能？
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+
+                    </li>-->
+                </ul>
+            </div>
+        </div>
+    </div>
+   <!-- <div class="fix_footer">
+        <a href="#">查看更多</a>
+    </div>-->
+</div>
+<script type="text/javascript" src="js/jquery-1.12.3.js"></script>
+<script type="text/javascript" src="js/common.js"></script>
+<!--data-->
+<script type="text/javascript" src="data/f_data.js"></script>
+<script type="text/javascript" src="js/index.js"></script>
+<!-- Core JS file -->
+<script src="dist/photoswipe.min.js"></script>
+<!-- UI JS file -->
+<script src="dist/photoswipe-ui-default.min.js"></script>
+<script src="js/util.js"></script>
+</body>
+</html>
