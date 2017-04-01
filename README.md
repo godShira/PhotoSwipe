@@ -3,8 +3,8 @@
 
 ### v2.0.0 效果图
 
-<p align="center" style =".clearfix:after {display: block;height: 0;content: '';clear: both;}">
-  <a href="https://github.com/godkillerdan/PhotoSwipe/blob/master/log.png" style="float:left;">
+<p align="left">
+  <a href="https://github.com/godkillerdan/PhotoSwipe/blob/master/log.png" float="left">
     <img src="https://github.com/godkillerdan/PhotoSwipe/blob/master/log.png" alt="效果图">
   </a>
   <a href="https://github.com/godkillerdan/PhotoSwipe/blob/master/log_big.png"  style="float:left;">
