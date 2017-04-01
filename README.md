@@ -5,3 +5,6 @@
 ![image](https://github.com/godkillerdan/PhotoSwipe/blob/master/log.jpg)
 
 
+代码会持续优化，如果喜欢望赏颗星。
+
+
