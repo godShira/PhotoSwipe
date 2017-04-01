@@ -3,3 +3,4 @@
 
 ### v2.0.0 效果图
 ![image](https://github.com/godkillerdan/PhotoSwipe/blob/master/log.png)
+![image](https://github.com/godkillerdan/PhotoSwipe/blob/master/log_big.png)
